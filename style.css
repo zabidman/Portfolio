@@ -79,3 +79,11 @@ body {
     padding: 10px;
   }
 
+  .card{
+    margin: 10px;
+  }
+
+  /* .card-group{
+    display: flex;
+  } */
+
