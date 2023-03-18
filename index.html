@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 </head>
 
 <body>
@@ -18,95 +18,206 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#my-work">My Work</a></li>
-      </ul>
+  <header class="sticky-top">
+    <!-- <h1>My Portfolio</h1> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#about-me">About Me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#my-work" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">My Work</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#efutric">EFUTRIC</a></li>
+                <li><a class="dropdown-item" href="#movieposter">Movie Poster</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#myskills">My Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mycontact">My contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
     </nav>
+
   </header>
   <main>
-    <marquee behavior="" direction="">Welcome to my portfolio</marquee>
+    <marquee behavior="" direction="">
+      <p class="display-5">Welcome to My Portfolio</p>
+    </marquee>
     <section id="about-me">
       <div class="container-lg" id="aboutme">
-        <h2>About Me</h2>
-        <h4>I Am Zabid bin Mohd Ayup</h4>
+        <p class="h1">About Me</p>
+        <p class="display-1">I Am Zabid bin Mohd Ayup</p>
         <p>I'm graduate from Politeknik Brunei taking Level 5 Diploma in Information System. Previously i was an intern
           at AMARCO SERVICES SDN BHD as Technical Assistant intern. Although my position is not related with my major, i
           proposed the company for an appication to keep track of their vessel critical parts inventory. So with this
-          proposal, it will benifit the company and me. The company get to have an application to track their inventory
-          and i have an experience on developing an application that can help improvise my skills on android studio.
+          proposal, it will benifit the company and me. The company get to have an application to track of their
+          inventory
+          while i gained an experience on developing an application that can help improvise my skills on android studio.
         </p>
       </div>
     </section>
     <section id="my-work">
+      <div class="container">
+        <p class="h1">My Work</p>
+        <ul>
+          <li>
+            <p class="display-4" id="efutric">EFUTRIC</p>
+            <p>My previous final year project at Politeknik Brunei. We work with this project as a group. It is an
+              Application developed using Android Studio and Firebase for the database.</p>
+            <div class="row row-cols-2 row-cols-md-4 g-1">
+              <div class="col">
+                <div class="card border-primary mb-3 text-white bg-primary">
+                  <img src="img/startingpoint.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Splashscreen</h5>
+                    <p class="card-text">This is splash screen include two button for login and register</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card border-primary mb-3 text-white bg-primary">
+                  <img src="img/login.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Login page</h5>
+                    <p class="card-text">Allow user to login with their username and password. User also able to keep
+                      logged in.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card border-primary mb-3 text-white bg-primary">
+                  <img src="img/register.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Register</h5>
+                    <p class="card-text">a registration for 2 type user which is customer and electrician</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card border-primary mb-3 text-white bg-primary">
+                  <img src="img/listoftopic.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="List of discussion">Register</h5>
+                    <p class="card-text">A list of dicussion has been posted by customer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-primary mb-3 text-white bg-primary">
+                  <img src="img/viewforum.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">View of discussion</h5>
+                    <p class="card-text">A discussion where electrician and customer can comment</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-primary mb-3 text-white bg-primary">
+                  <img src="img/viewproblem.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Register</h5>
+                    <p class="card-text">a registration for 2 type user which is customer and electrician</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </li>
+          <li>
+            <p class="display-4" id="movieposter">Movie Poster</p>
+            <p>It's an assignment during semester 2, I was assigned to make my own movie poster that similar to chosen
+              movie poster called Us. The poster are edited using Adobe Photoshop CC</p>
+
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="myskills">
       <div class="container-lg">
-      <h2>My Work</h2>
-      <ul>
-        <li>
-          <h3>EFUTRIC</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ducimus.</p>
-          <div class="card-group">
-            <div class="card">
-              <img src="img/startingpoint.png" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Splashscreen</h5>
-                <p class="card-text">This is splash screen include two button for login and register</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="img/login.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Login page</h5>
-                <p class="card-text">Allow user to login with their username and password. User also able to keep logged in.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="img/register.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Register</h5>
-                <p class="card-text">a registration for 2 type user which is customer and electrician</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="img/register.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Register</h5>
-                <p class="card-text">a registration for 2 type user which is customer and electrician</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="img/register.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Register</h5>
-                <p class="card-text">a registration for 2 type user which is customer and electrician</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="img/register.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Register</h5>
-                <p class="card-text">a registration for 2 type user which is customer and electrician</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
+        <p class="h1">My Skills</p>
+        <div class="d-flex p-2 bd-highlight bg-light flex-wrap">
+          <div class="card">
+            <div class="card-body text-primary">
+              Java Programming
             </div>
           </div>
 
-        </li>
-        <li>
-          <h3>Movie Poster</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, praesentium.</p>
+          <div class="card">
+            <div class="card-body  text-success">
+              MySql
+            </div>
+          </div>
 
-        </li>
-      </ul>
-    </div>
+          <div class="card">
+            <div class="card-body text-success">
+              React
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body text-primary">
+              HTML,CSS & Javascript
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body text-primary">
+              Firebase
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body text-primary">
+              Android Studio
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body text-primary">
+              Microsoft Office
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body  text-success">
+              Adobe Photoshop CC & Premiere Pro CC
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    </section>
+
+    <section id="mycontact">
+      <div class="container-lg">
+        <p class="h1">My contact</p>
+        <ul class="list-group">
+          <li class="list-group-item">Email: zabid.mohdayup@gmail.com</li>
+          <li class="list-group-item">Phone No.: +673 893 2003</li>
+        </ul>
+      </div>
+
     </section>
 
   </main>
